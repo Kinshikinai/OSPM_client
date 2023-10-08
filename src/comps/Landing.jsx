@@ -5,17 +5,7 @@ import Sletter from '../img/Group 1.svg';
 
 function Landing() {
   return (
-    <body>
     <div id="main" class="firstblock">
-      
-   
-    <div className='rightfixed'> 
-        <a href="#second">PROJECTS</a>
-        <a href="#second">ABOUT US</a>
-    <img src={require("../img/add.png")} alt="" />
-    <img src={require("../img/user.png")} alt="" />
-    
-    </div>
       <p class="headers">
         FIND A PROJECT <br />
        AND MEMBERS
@@ -51,8 +41,6 @@ function Landing() {
       </div>
 
     </div>
-</body>
-
   );
 }
 

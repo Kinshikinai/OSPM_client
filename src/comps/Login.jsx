@@ -56,7 +56,7 @@ export function Login() {
                     </div>
                 </div>
                 <button onClick={loggingin}>Log In</button>
-                <Link to='/' style={{color: 'white', margin: 'auto'}}>Don't have an account? Register!</Link>
+                <Link to='/reg' style={{color: 'white', margin: 'auto'}}>Don't have an account? Register!</Link>
             </div>
         </div>
     );

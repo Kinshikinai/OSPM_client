@@ -33,6 +33,10 @@
     border-bottom: 2px solid rgba(0, 0, 0, .8);
     font-size: 1.8rem;
 }
+.create .createform .fblock #pname.warned {
+    border: 1px solid red;
+    border-bottom: 2px solid red;
+}
 .create .createform .sblock {
     width: 100%;
     height: fit-content;
@@ -54,6 +58,10 @@
     min-height: 50vh;
     outline: none;
     border: 1px solid black;
+}
+.create .createform .sblock textarea.warned {
+    border: 1px solid red;
+    border-bottom: 2px solid red;
 }
 .create .createform .sblock textarea::-webkit-scrollbar {
     width: 4px;
@@ -104,6 +112,10 @@
     padding: 1vh 1.5vw;
     font-weight: 500;
     font-size: 1rem;
+}
+.create .createform .sblock .skills .skill.active {
+    background: rgba(10, 10, 200, 1);
+    color: white;
 }
 .create .createform .sblock .skills .skill:hover {
     background: rgba(10, 10, 200, 1);
