@@ -1,0 +1,48 @@
+.nav {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100vw;
+  padding: 10px;
+  background: rgba(26, 36, 89, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .icon img {
+  filter: brightness(0.7);
+  cursor: pointer;
+  width: auto;
+  height: 60px;
+}
+.nav .icon img:hover {
+  filter: brightness(1);
+}
+.nav .navs {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-right: 40px;
+}
+.nav .navs p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.nav .navs p:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.nav .navs img {
+  filter: invert(40%);
+  cursor: pointer;
+  width: auto;
+  height: 36px;
+}
+.nav .navs img:hover {
+  filter: invert(100%);
+}

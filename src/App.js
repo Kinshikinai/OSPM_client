@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { Login } from './comps/Login.jsx';
+import { Reg } from './comps/Reg.jsx';
+import { Create } from './comps/Create.jsx';
+import { Nav } from './comps/Nav.jsx';
+import { Routes, Route } from "react-router-dom";
+import { Project } from './comps/Project.jsx';
+import { AP } from './comps/AP.jsx';
+import Projects from './comps/Projects.jsx';
+import Landing from './comps/Landing.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Reg/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/create' element={<><Nav/> <Create/></>}/>
+      <Route path='/project' element={<><Nav/> <Project/></>}/>
+      <Route path='/ap' element={<><Nav/> <AP/></>}/>
+      <Route path='/projects' element={<><Nav/> <Projects/></>}/>
+      <Route path='/land' element={<><Nav/> <Landing/></>}/>
+    </Routes>
   );
 }
 

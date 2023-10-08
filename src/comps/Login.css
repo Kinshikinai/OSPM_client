@@ -1,0 +1,108 @@
+.login {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(26, 36, 89, 1) 0%, black 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login .loginform {
+    margin-top: -4vh;
+    width: 28vw;
+    height: 56vh;
+    border-radius: 46px;
+    border: .1mm solid rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .006);
+    display: flex;
+    flex-direction: column;
+}
+.login .loginform:hover {
+    transform: translateY(-.2vh);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .1);
+}
+.login .loginform h1 {
+    margin: 4vh 0vw 1vh;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.login .loginform .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: ce nter;
+    gap: 4vh;
+}
+.login .loginform .wrapper input {
+    background: transparent;
+    border: .1mm solid rgba(255, 255, 255, .2);
+    border-bottom: .1mm solid rgba(255, 255, 255, .9);
+    border-radius: 10px 10px 0px 0px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 17vw;
+    height: 5vh;
+    padding: 1vh 1vw;
+    color: white;
+}
+.login .loginform .wrapper input:focus {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, .2);
+}
+.login .loginform input:-webkit-autofill {
+    -webkit-box-shadow: none;
+    -webkit-text-fill-color: black;
+}
+.login .loginform input:-webkit-autofill:focus {
+    -webkit-box-shadow: none;
+    -webkit-text-fill-color: black;
+}
+.login .loginform button {
+    cursor: pointer;
+    width: 12vw;
+    font-size: 1.3rem;
+    padding: 1vh 0vw;
+    border: .1mm solid rgba(255, 255, 255, .2);
+    border-radius: 10px 10px 0 0;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    margin: auto;
+}
+.login .loginform button:hover {
+    background-color: green;
+    box-shadow: 0px 0px 10px green;
+}
+.login .loginform .wrapper .inpwarn {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.login .loginform .wrapper .inpwarn .warn {
+    margin: 0;
+    padding: 0;
+    color: red;
+    font-size: .5rem;
+    margin-left: 1vw    ;
+}
+.login .loginform .rolechoose {
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    margin-bottom: 1vh;
+}
+.login .loginform .rolechoose label {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}
+.login .loginform .rolechoose input:checked {
+    outline: none;
+}

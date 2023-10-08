@@ -1,0 +1,38 @@
+.cr {
+    width: 100%;
+    height: fit-content;
+    padding: 1vh 1vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cr h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.cr .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.cr .buttons button {
+    border: 1px solid rgba(0, 0, 0, .6);
+    padding: .5vh 1vw;
+    background: transparent;
+    cursor: pointer;
+}
+.cr .buttons button:first-child {
+    background: rgba(0, 255, 0, .8);
+}
+.cr .buttons button:first-child:hover {
+    background: rgba(0, 255, 0, 1);
+    box-shadow: 0 0 10px green;
+}
+.cr .buttons button:last-child {
+    background: rgba(255, 0, 0, .8);
+}
+.cr .buttons button:last-child:hover {
+    background: rgba(255, 0, 0, 1);
+    box-shadow: 0 0 10px red;
+}

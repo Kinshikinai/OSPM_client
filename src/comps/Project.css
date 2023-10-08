@@ -1,0 +1,41 @@
+.project {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project .projectblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    border: 1px solid black;
+    width: 96vw;
+    height: fit-content;
+    padding: 1vh 1vw;
+    margin-top: 120px;
+}
+.project .projectblock .frow .fcol {
+    width: fit-content;
+}
+.project .projectblock .frow .fcol img {
+    width: 700px;
+    height: auto;
+}
+.project .projectblock>* {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+}
+.project .projectblock>*>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project .projectblock>*.scol {
+    width: 50%;
+}

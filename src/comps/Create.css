@@ -1,0 +1,111 @@
+.create {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 4vh;
+}
+.create .createform {
+    height: fit-content;
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+.create .createform .fblock {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.create .createform .fblock #pname {
+    width: 38%;
+    height: 40%;
+    padding: .1% 1%;
+    margin-left: 2vw;
+    outline: none;
+    border: 1px solid white;
+    border-bottom: 2px solid rgba(0, 0, 0, .8);
+    font-size: 1.8rem;
+}
+.create .createform .sblock {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0;
+    gap: 2vh;
+}
+.create .createform .sblock textarea {
+    font-size: 1.3rem;
+    padding: 1vh 1vw;
+    width: 95%;
+    height: 50vh;
+    max-width: 95%;
+    max-height: 50vh;
+    min-width: 95%;
+    min-height: 50vh;
+    outline: none;
+    border: 1px solid black;
+}
+.create .createform .sblock textarea::-webkit-scrollbar {
+    width: 4px;
+    background-color: white;
+}
+.create .createform .sblock textarea::-webkit-scrollbar-thumb {
+    width: 4px;
+    background: black;
+}
+.create .createform .sblock button {
+    width: 16%;
+    height: 8vh;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.create .createform .sblock button:hover {
+    background: green;
+    color: white;
+}
+.create .createform .sblock p {
+    text-align: left;
+    width: 95%;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+}
+.create .createform select {
+    width: 20%;
+    height: 6vh;
+    font-size: 1.4rem;
+    padding: 0 .5vw;
+}
+.create .createform .sblock .skills {
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    gap: 1vw;
+}
+.create .createform .sblock .skills .skill {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid black;
+    padding: 1vh 1.5vw;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.create .createform .sblock .skills .skill:hover {
+    background: rgba(10, 10, 200, 1);
+    color: white;
+}
